@@ -24,6 +24,7 @@ const BASE_PATH = (location.hostname === "localhost" || location.hostname === "1
   
     let a = document.createElement('a');
     a.href = url;
+    if (p.url.startsWith('http')) a.target = "_blank";
     a.textContent = p.title;
   
     // Highlight current page
