@@ -16,8 +16,8 @@ let nav = document.createElement('nav');
 document.body.prepend(nav);
 
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-  ? "/"                  // when testing locally
-  : "/portfolio/"; // change this to your GitHub repo name
+  ? "/"                  
+  : "/portfolio/"; 
 
   for (let p of pages) {
     let url = !p.url.startsWith('http') ? BASE_PATH + p.url : p.url;
@@ -27,13 +27,11 @@ const BASE_PATH = (location.hostname === "localhost" || location.hostname === "1
     if (p.url.startsWith('http')) a.target = "_blank";
     a.textContent = p.title;
   
-    // Highlight current page
     a.classList.toggle(
       'current',
       a.host === location.host && a.pathname === location.pathname
     );
   
-    // Open external links in new tab
     a.toggleAttribute('target', a.host !== location.host);
   
     nav.append(a);
@@ -73,7 +71,7 @@ const BASE_PATH = (location.hostname === "localhost" || location.hostname === "1
   let form = document.querySelector("form");
 
 form?.addEventListener("submit", function (event) {
-  event.preventDefault(); // Stop the default form submission
+  event.preventDefault(); 
 
   let data = new FormData(form);
   let params = [];
