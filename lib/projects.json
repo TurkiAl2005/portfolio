@@ -1,0 +1,76 @@
+[
+    {
+        "title": "Power Outage Impact Analysis",
+        "year": 2025,
+        "image": "../images/power_outage.jpeg",
+        "url": "https://turkialrasheed.github.io/Power_Outage_Impact_Analysis/",
+        "description": "I engineered the “impact” metric through Principal Component Analysis with impact-related features, analyzed the signs of high impact power outages through interactive visualizations & permutation testing, and trained and tested a Random Forest Regressor model to predict the impact of a power outage, tuning hyperparameters using Grid Search to maximize model performance."
+    },
+    {
+        "title": "Movie Title & Overview Generator",
+        "year": 2025,
+        "image": "../images/movie.jpeg",
+        "url": "https://github.com/TurkiAlrasheed/Movie-Generator",
+        "description": "I developed an AI-powered web application that generates movie titles and concise story overviews based on user-provided genres, keywords, and originality level by fine-tuning Google's T5 language model on custom tokenized data from The Movie Database and optimizing generation hyperparameters (e.g., temperature, top_k) to produce creative yet coherent outputs."
+    },
+    {
+        "title": "Nemo ratione similique harum.",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Excepturi magni fuga aperiam esse nemo corrupti nisi modi cum molestias praesentium, cupiditate tempore facere sapiente id voluptates est eaque deleniti quos in. Asperiores, consequuntur impedit. Maiores hic labore esse?"
+    },
+    {
+        "title": "Veritatis odit aliquid iure!",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Sint nostrum consequatur cupiditate labore hic suscipit sit, distinctio necessitatibus quis laudantium omnis, saepe ducimus nihil quidem consequuntur quae autem. Commodi, sequi. Quis eaque fugit vitae dolor molestiae soluta magni."
+    },
+    {
+        "title": "Odio neque veritatis cumque!",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Error, voluptatibus itaque! Earum, blanditiis? Molestiae voluptatibus doloribus culpa dolor voluptas voluptate nam eos numquam minima facilis, ex vero nemo itaque, tenetur nihil quaerat sint. Quibusdam asperiores neque ipsam odit."
+    },
+    {
+        "title": "Facilis placeat cumque impedit?",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Illo quam autem perspiciatis in, fugiat, soluta necessitatibus ducimus qui sunt asperiores assumenda iusto obcaecati laboriosam maxime fugit voluptas, nesciunt eum. Eius eveniet rem unde vitae sit ad obcaecati omnis."
+    },
+    {
+        "title": "Quo possimus id reiciendis.",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Explicabo deserunt nihil similique minima eveniet consequuntur aliquid porro, corporis alias natus facere itaque. Quam dolore culpa in eum harum saepe architecto esse consectetur sunt voluptatibus, deserunt labore! Repellendus, numquam."
+    },
+    {
+        "title": "Blanditiis iure dignissimos eaque!",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Optio iste voluptate cum quas necessitatibus laudantium veritatis praesentium culpa omnis dolore voluptatum dolorem autem quam doloremque odit nostrum, cupiditate dolorum enim eligendi provident velit? Nisi aliquid dolore cum temporibus?"
+    },
+    {
+        "title": "Voluptas exercitationem adipisci vero?",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Aperiam in quo distinctio debitis perspiciatis laborum temporibus, laboriosam cumque! Accusamus qui ab laudantium nemo pariatur et, quia tempore at impedit animi, porro eveniet accusantium praesentium ad vero? Nulla, nihil!"
+    },
+    {
+        "title": "Fugiat vel sunt maxime?",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Animi tempore assumenda inventore est praesentium consequatur iste dolores laborum. Vitae, aliquid repellat. Recusandae, delectus! Quisquam nesciunt earum molestias quas eius aperiam maiores, accusamus dolore in quidem iure velit temporibus."
+    },
+    {
+        "title": "Officia aliquam beatae impedit.",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Tempora perspiciatis facere assumenda repellendus molestias ut vero voluptatem doloribus nam eos suscipit laudantium rem, non, sunt magnam, labore excepturi minus quas quis provident! Laudantium sit in deserunt perspiciatis odit!"
+    },
+    {
+        "title": "Fuga, ipsum voluptates. Deleniti?",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Commodi ab officia, odit dolorum voluptas aspernatur aliquid aut ut, deleniti illo iure. Nemo incidunt eos aspernatur voluptate ut, maxime voluptatibus culpa ullam quasi alias dolores consequatur ipsa, quis aliquid?"
+    }
+]

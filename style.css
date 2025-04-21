@@ -164,3 +164,72 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.3rem;
 }
 
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  background-color: var(--bg-card, #f7f7f7);
+  color: var(--text-color, #222);
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+
+#profile-stats dt {
+  font-weight: bold;
+  grid-row: 1;
+  margin: 0;
+}
+
+#profile-stats dd {
+  margin: 0;
+  font-size: 1.2rem;
+  grid-row: 2;
+}
+/* with this */
+.project-link {
+  display: block;
+  margin-top: 12rem;    /* small positive gap */
+  margin-bottom: 1.2rem; /* or whatever looks good */
+  text-align: left;
+}
+.project-link a {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  background-color: #24292e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+.project-description {
+  display: block;
+  margin-top: 15rem;   /* adjust up/down until it looks right */
+}
+
+
+
+
+.project-link a:hover {
+  background-color: #0366d6;
+}
+
+.project-year {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0.0rem 0rem;   /* top 0.15 rem, bottom 0.4 rem */
+}
+.projects img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
