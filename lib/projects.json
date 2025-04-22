@@ -2,14 +2,14 @@
     {
         "title": "Power Outage Impact Analysis",
         "year": 2025,
-        "image": "/images/power_outage.jpeg",
+        "image": "https://TurkiAlrasheed.github.io/portfolio/images/power_outage.jpeg",
         "url": "https://turkialrasheed.github.io/Power_Outage_Impact_Analysis/",
         "description": "I engineered the “impact” metric through Principal Component Analysis with impact-related features, analyzed the signs of high impact power outages through interactive visualizations & permutation testing, and trained and tested a Random Forest Regressor model to predict the impact of a power outage, tuning hyperparameters using Grid Search to maximize model performance."
     },
     {
         "title": "Movie Title & Overview Generator",
         "year": 2025,
-        "image": "/images/movie.jpeg",
+        "image": "https://TurkiAlrasheed.github.io/portfolio/images/movie.jpeg",
         "url": "https://github.com/TurkiAlrasheed/Movie-Generator",
         "description": "I developed an AI-powered web application that generates movie titles and concise story overviews based on user-provided genres, keywords, and originality level by fine-tuning Google's T5 language model on custom tokenized data from The Movie Database and optimizing generation hyperparameters (e.g., temperature, top_k) to produce creative yet coherent outputs."
     },
