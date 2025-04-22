@@ -191,8 +191,8 @@ h1, h2, h3, h4, h5, h6 {
 /* with this */
 .project-link {
   display: block;
-  margin-top: 12rem;    /* small positive gap */
-  margin-bottom: 1.2rem; /* or whatever looks good */
+  margin-top: 12rem;    
+  margin-bottom: 1.2rem; 
   text-align: left;
 }
 .project-link a {
@@ -208,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .project-description {
   display: block;
-  margin-top: 15rem;   /* adjust up/down until it looks right */
+  margin-top: 15rem;   
 }
 
 
@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 .project-year {
   font-size: 0.85rem;
   color: #888;
-  margin: 0.0rem 0rem;   /* top 0.15 rem, bottom 0.4 rem */
+  margin: 0.0rem 0rem;   
 }
 .projects img {
   width: 100%;
