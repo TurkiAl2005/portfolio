@@ -19,7 +19,6 @@ function processCommits(data) {
     .map(([commit, lines]) => {
       let first = lines[0];
       let { author, date, time, timezone, datetime } = first;
-
       let ret = {
         id: commit,
         url: 'https://github.com/TurkiAlrasheed/portfolio/commit/' + commit,
@@ -46,12 +45,12 @@ function processCommits(data) {
 function renderCommitInfo(data, commits) {
     const dl = d3.select('#stats').append('dl').attr('class', 'stats');
   
-    dl.append('dt').html('Total lines of code');
+    dl.append('dt').html('Total <abbr title="Lines of code">LOC</abbr>');
     dl.append('dd').text(data.length);
-  
+
     dl.append('dt').text('Total commits');
     dl.append('dd').text(commits.length);
-  
+
     const fileCount = d3.groups(data, d => d.file).length;
     dl.append('dt').text('Number of files');
     dl.append('dd').text(fileCount);
@@ -82,7 +81,10 @@ function renderCommitInfo(data, commits) {
     const [topPeriod, topCount] = d3.greatest(periodCounts, d => d[1]);
     dl.append('dt').text('Most active time of day');
     dl.append('dd').text(`${topPeriod} (${topCount} commits)`);
+  
+   
   }
+  
   let xScale, yScale;
   function renderScatterPlot(data, commits) {
     const width = 1000;
