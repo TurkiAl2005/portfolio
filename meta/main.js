@@ -240,16 +240,21 @@ function renderCommitInfo(data, commits) {
       (d) => d.type,
     );
   
-    container.innerHTML = '';
-  
+    container.innerHTML = ''; 
+
     for (const [language, count] of breakdown) {
       const proportion = count / lines.length;
       const formatted = d3.format('.1~%')(proportion);
-  
-      container.innerHTML += `
-        <dt>${language}</dt>
-        <dd>${count} lines (${formatted})</dd>
+
+      const row = document.createElement('div');
+      row.className = 'language-row';
+
+      row.innerHTML = `
+        <div class="lang-name">${language}</div>
+        <div class="lang-count">${count} lines (${formatted})</div>
       `;
+
+      container.appendChild(row);
     }
   }
 

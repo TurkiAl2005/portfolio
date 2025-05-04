@@ -430,3 +430,31 @@ dl.info[hidden]:not(:hover, :focus-within) {
 circle.selected {
   fill: #ff6b6b;
 }
+
+#language-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.language-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-family: system-ui, sans-serif;
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid oklch(80% 3% 200 / 30%);
+}
+
+.lang-name {
+  font-weight: 600;
+}
+
+.lang-count {
+  text-align: right;
+  color: oklch(45% 10% 200);
+}
+
+
+
