@@ -14,10 +14,11 @@
         "description": "I developed an AI-powered web application that generates movie titles and concise story overviews based on user-provided genres, keywords, and originality level by fine-tuning Google's T5 language model on custom tokenized data from The Movie Database and optimizing generation hyperparameters (e.g., temperature, top_k) to produce creative yet coherent outputs."
     },
     {
-        "title": "Nemo ratione similique harum.",
+        "title": "Boston Bike Traffic Map",
         "year": 2025,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Excepturi magni fuga aperiam esse nemo corrupti nisi modi cum molestias praesentium, cupiditate tempore facere sapiente id voluptates est eaque deleniti quos in. Asperiores, consequuntur impedit. Maiores hic labore esse?"
+        "image": "https://TurkiAlrasheed.github.io/portfolio/images/map_vis.png",
+        "url":"https://turkialrasheed.github.io/boston-bike-traffic-map/",
+        "description": "This project presents an interactive D3.js + Mapbox-based visualization of bike traffic across Boston and Cambridge using Bluebikes data. Users can explore how traffic volume and flow vary throughout the day, visualized through dynamic circle sizes and color-coded directions at each station. A time slider allows filtering trips by time of day, revealing shifting patterns of bike usage."
     },
     {
         "title": "Veritatis odit aliquid iure!",
