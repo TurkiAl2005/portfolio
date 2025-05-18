@@ -192,16 +192,25 @@ function renderCommitInfo(data, commits) {
     
   }
   function renderTooltipContent(commit) {
-    const link = document.getElementById('commit-link');
-    const date = document.getElementById('commit-date');
+    const link   = document.getElementById('commit-link');
+    const date   = document.getElementById('commit-date');
+    const time   = document.getElementById('commit-time');
+    const author = document.getElementById('commit-author');
+    const lines  = document.getElementById('commit-lines');
   
-    if (Object.keys(commit).length === 0) return;
+    if (!commit || Object.keys(commit).length === 0) return;
   
-    link.href = commit.url;
+    link.href        = commit.url;
     link.textContent = commit.id;
-    date.textContent = commit.datetime?.toLocaleString('en', {
-      dateStyle: 'full',
-    });
+  
+    const dt = commit.datetime;
+    if (dt instanceof Date) {
+      date.textContent = dt.toLocaleDateString(undefined, { dateStyle: 'full' });
+      time.textContent = dt.toLocaleTimeString(undefined, { timeStyle: 'short' });
+    }
+  
+    author.textContent = commit.author;
+    lines.textContent  = `${commit.totalLines} lines`;
   }
   function updateTooltipVisibility(isVisible) {
     const tooltip = document.getElementById('commit-tooltip');
