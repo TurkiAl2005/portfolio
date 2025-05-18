@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meta</title>
-    <link rel="stylesheet" href="../style.css">
-    <script type="module" src="./main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meta</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script type="module" src="./main.js"></script>
 </head>
 <body>
-    <section class="summary">
-        <h2>Summary</h2>
-        <div id="stats"></div>
-      </section>
+  <h1>Meta</h1>
+  <p>This page includes stats about the code of this website.</p>
 
-    <h2>Commits by time of day</h2>
+  <div id="stats"></div>
+  <h2>Files Edited Over Time</h2>
+
+  <div id="scrollytelling-file">
+    <div id="scroll-container-file">
+      <div id="spacer-file"></div>
+      <div id="items-container-file"></div>
+    </div>
+  
+    <dl class="files"></dl>
+  </div>
+
+</div>
+  <h2>Commits by time of day</h2>
+
+  <div id="scrollytelling">
+    <div id="scroll-container">
+      <div id="spacer"></div>
+      <div id="items-container"></div>
+    </div>
     <div id="chart"></div>
-    <dl id="commit-tooltip" class="info tooltip" hidden>
-        <dt>Commit</dt>
-        <dd>
-          <a href="" id="commit-link" target="_blank"></a>
-        </dd>
-      
-        <dt>Date</dt>
-        <dd id="commit-date"></dd>
-      </dl>
-    <p id="selection-count">No commits selected</p>
-    <dl id="language-breakdown" class="stats"></dl>
-    
-    <script type="module" src="../global.js"></script>
-    <script src="../global.js" type="module"></script>
-    <script src="projects.js" type="module"></script>
-    
+  </div>
+  
+
+  <dl id="commit-tooltip" class="info tooltip" hidden>
+    <dt>Commit</dt>
+    <dd><a href="" id="commit-link" target="_blank"></a></dd>
+    <dt>Date</dt>
+    <dd id="commit-date"></dd>
+  </dl>
+
+  <p id="selection-count">No commits selected</p>
+  <dl id="language-breakdown" class="stats"></dl>
+
+  <script type="module" src="../global.js"></script>
+  <script src="../global.js" type="module"></script>
+  <script src="projects.js" type="module"></script>
 </body>
 </html>
-
-

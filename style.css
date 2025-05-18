@@ -380,11 +380,12 @@ svg:has(path:hover) path:not(:hover) {
   position: fixed;
   top: 1em;
   left: 1em;
-  background: oklch(98% 0.02 240);
-  border: 1px solid #ccc;
+  background-color: canvas;      /* adapts to light/dark */
+  color: canvastext;              /* ensures text contrasts */
+  border: 1px solid canvastext;   /* also adapts */
   border-radius: 0.5em;
   padding: 1em;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 0.9rem;
   z-index: 10;
 }
@@ -465,3 +466,318 @@ circle.selected {
 
 
 
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  gap: 1rem;
+  padding: 0.5rem 1rem;              /* less padding */
+  border-radius: 8px;
+  background-color: oklch(95% 0.02 240);
+  font-family: system-ui, sans-serif;
+  margin-top: 0.5rem;                /* tighter spacing above */
+  margin-bottom: 0rem;
+  text-align: center;
+  font-size: 0.85rem;                /* smaller font overall */
+  line-height: 1.2;
+}
+.stats dt {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: oklch(45% 0.05 260);
+  margin: 0;
+}
+
+.stats dd {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: oklch(20% 0.05 260);
+}
+
+
+
+@starting-style {
+  circle {
+    r: 0;
+  }
+}
+dl.files {
+  /* make the dl a two‐column grid */
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+dl.files > div {
+  /* span full width, but use subgrid to align dt/dd */
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+dl.files dt {
+  grid-column: 1;
+  font-weight: 600;
+  margin: 0;
+}
+
+dl.files dd {
+  grid-column: 2;
+  margin: 0;
+}
+/* make the file-list a two-column grid with subgrid alignment */
+dl.files {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+dl.files > div {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
+
+/* style the filename + small count */
+dl.files dt small {
+  display: block;
+  font-size: 0.75em;
+  opacity: 0.6;
+  margin-top: 0.2em;
+}
+
+/* turn each committed line into a little dot */
+dl.files dd {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin: 0; /* reset default dd margin */
+}
+
+dl.files dd .line {
+  width: 0.5em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+/* 3.0: allow wider Meta page */
+:global(body) {
+  max-width: min(120ch, 80vw);
+}
+
+/* scrollytelling layout */
+#scrollytelling {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+#scroll-container {
+  grid-column: 1;
+  position: relative;
+  width: 95%;
+  height: 350px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+#chart {
+  grid-column: 2;
+}
+
+#spacer {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+}
+
+#items-container {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+}
+
+.item {
+  height: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #eee;
+}
+body {
+  max-width: min(120ch, 80vw);
+}
+#scrollytelling {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+/* feel free to play with this to make your scrolly more seemless with your plot */
+#scroll-container {
+  grid-column: 1;
+  position: relative;
+  width: 95%;
+  height: 350px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+#chart {
+  grid-column: 2;
+}
+
+#spacer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: none; /* transparent */
+  pointer-events: none;
+}
+
+#items-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.item {
+  height: 70px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #eee;
+}
+
+.item {
+  position: absolute;
+  height: 100px;           /* Set to match ITEM_HEIGHT in JS */
+  padding: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+#scrollytelling-file {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+  margin-top: 2rem;
+}
+
+#scroll-container-file {
+  grid-column: 1;
+  position: relative;
+  width: 95%;
+  height: 350px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+#spacer-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+#items-container-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.commit-item-file {
+  height: 80px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #eee;
+}
+.files {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  /* ✅ Make sure these are NOT present: */
+  /* max-height: ...; */
+  /* overflow: auto; */
+}
+#files-scrolly {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* or 40% 60% */
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: start;
+}
+
+/* Left scroll box */
+#scroll-container-files {
+  position: relative;
+  height: 350px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+}
+
+/* Spacer and commit story items */
+#spacer-files {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#items-container-files {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Individual commit narrative entries */
+.commit-item-file {
+  height: 90px; /* Adjust if needed */
+  padding: 0.5em;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+#scrollytelling-file {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2em;
+}
+
+#scroll-container-file {
+  height: 400px;
+  overflow-y: scroll;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+#spacer-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+#items-container-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
